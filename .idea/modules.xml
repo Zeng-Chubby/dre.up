@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/dreup-application/dreup-application.iml" filepath="$PROJECT_DIR$/dreup-application/dreup-application.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dreup-domain/dreup-domain.iml" filepath="$PROJECT_DIR$/dreup-domain/dreup-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dreup-domain-events/dreup-domain-events.iml" filepath="$PROJECT_DIR$/dreup-domain-events/dreup-domain-events.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dreup-domain-repositories/dreup-domain-repositories.iml" filepath="$PROJECT_DIR$/dreup-domain-repositories/dreup-domain-repositories.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dreup-infrastructure/dreup-infrastructure.iml" filepath="$PROJECT_DIR$/dreup-infrastructure/dreup-infrastructure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dreup-interface/dreup-interface.iml" filepath="$PROJECT_DIR$/dreup-interface/dreup-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dreup-parent.iml" filepath="$PROJECT_DIR$/dreup-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dreup-web/dreup-web.iml" filepath="$PROJECT_DIR$/dreup-web/dreup-web.iml" />
+    </modules>
+  </component>
+</project>

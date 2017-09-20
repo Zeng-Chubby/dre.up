@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="dreup-application" />
+        <module name="dreup-domain" />
+        <module name="dreup-domain-events" />
+        <module name="dreup-domain-repositories" />
+        <module name="dreup-infrastructure" />
+        <module name="dreup-interface" />
+        <module name="dreup-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="dreup-application" target="1.6" />
+      <module name="dreup-domain" target="1.6" />
+      <module name="dreup-domain-events" target="1.6" />
+      <module name="dreup-domain-repositories" target="1.6" />
+      <module name="dreup-infrastructure" target="1.6" />
+      <module name="dreup-interface" target="1.6" />
+      <module name="dreup-parent" target="1.6" />
+      <module name="dreup-web" target="1.6" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
