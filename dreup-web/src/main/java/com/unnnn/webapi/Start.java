@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  *  Spring Boot Web 启动程序。
- *  @author 曾智
+ *  @author 曾
  */
 @SpringBootApplication(scanBasePackages = "net.unnnn")
 public class Start {

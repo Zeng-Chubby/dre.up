@@ -14,5 +14,4 @@ public class CorsConfig extends WebMvcConfigurerAdapter {
                 .allowedMethods("GET", "POST", "DELETE", "PUT")
                 .maxAge(3600);
     }
-
 }
