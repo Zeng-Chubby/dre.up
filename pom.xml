@@ -24,6 +24,7 @@
         <module>dreup-domain-repositories</module>
         <module>dreup-domain-events</module>
         <module>dreup-infrastructure</module>
+        <module>dreup-core</module>
     </modules>
     <dependencies>
         <dependency>
