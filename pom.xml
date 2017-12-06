@@ -8,6 +8,8 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <properties>
+        <!--<maven.compiler.source>9</maven.compiler.source>-->
+        <!--<maven.compiler.target>9</maven.compiler.target>-->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <v.spring>4.3.10.RELEASE</v.spring>
     </properties>

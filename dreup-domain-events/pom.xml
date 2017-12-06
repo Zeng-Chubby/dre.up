@@ -16,11 +16,6 @@
             <artifactId>dreup-core</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-        <dependency>
-            <groupId>dreup-parent</groupId>
-            <artifactId>dreup-core</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
     </dependencies>
 
 

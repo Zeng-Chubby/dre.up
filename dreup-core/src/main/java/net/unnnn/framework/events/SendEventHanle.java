@@ -8,6 +8,11 @@ public class SendEventHanle extends EventHandlerBase<EventArgs> {
     }
 
     @Override
+    public void handler(Event event) {
+
+    }
+
+    @Override
     public void handle(Event event) {
         if (event instanceof EventArgs) {
             System.out.println("1");

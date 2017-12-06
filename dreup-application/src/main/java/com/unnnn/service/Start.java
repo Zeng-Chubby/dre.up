@@ -1,12 +1,8 @@
 package com.unnnn.service;
 
-
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import java.util.concurrent.CountDownLatch;
-
 
 /**
  * RPC 服务启动类。
@@ -16,12 +12,8 @@ import java.util.concurrent.CountDownLatch;
 @SpringBootApplication(scanBasePackages = "com.unnnn")
 public class Start {
     public static void main(String[] args) throws InterruptedException {
-            SpringApplication application = new SpringApplication(Start.class);
-            application.setWebEnvironment(false);
-            application.run(args);
-
-            CountDownLatch latch = new CountDownLatch(1);
-            latch.await();
-
+        SpringApplication application = new SpringApplication(Start.class);
+        application.setWebEnvironment(false);
+        application.run(args);
     }
 }
