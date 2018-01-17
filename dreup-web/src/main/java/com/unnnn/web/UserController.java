@@ -1,4 +1,4 @@
-package com.unnnn.webapi.controller;
+package com.unnnn.webapi;
 
 import com.unnnn.webapi.ApiController;
 import net.unnnn.instructions.ResponseInstruction;
@@ -11,16 +11,21 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * @author ZengZhi
+ */
 @RestController
 @EnableAutoConfiguration
 @RequestMapping(value = "/user")
 public class UserController extends ApiController {
+
     @Reference(check = false)
     public ProductService productService;
 
     @RequestMapping(value = "/{orderId}", method = {RequestMethod.POST, RequestMethod.GET})
     public ResponseInstruction<ProductObject> Get(@PathVariable long orderId) {
         ResponseInstruction<ProductObject> response = productService.getProduct(orderId);
+
         return response;
     }
 }
