@@ -5,20 +5,14 @@ import net.unnnn.instructions.RequestInstruction;
 import net.unnnn.instructions.ResponseInstruction;
 import net.unnnn.service.products.ProductObject;
 import net.unnnn.service.products.ProductService;
-import org.springframework.amqp.core.Queue;
-import org.springframework.amqp.rabbit.core.RabbitTemplate;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.stereotype.Component;
 
 /**
- * Created by warrenn on 2017/7/25.
+ * 产品服务。
+ * @author ZengZhi
+ * @date 2017/7/25
  */
 @Service
 public class ProductServiceImpl implements ProductService {
-
-
-
     @Override
     public ResponseInstruction<Boolean> AddProduct(RequestInstruction<ProductObject> request) {
         return null;

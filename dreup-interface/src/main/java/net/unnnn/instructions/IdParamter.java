@@ -2,11 +2,12 @@ package net.unnnn.instructions;
 
 /**
  * id 数据传输类型。
+ *
  * @param <T> Id 数据类型。
+ * @author ZengZhi
  */
-public class IdParamter<T> extends  DataObject {
+public class IdParamter<T> extends DataObject {
     private T id;
-
 
     public T getId() {
         return id;

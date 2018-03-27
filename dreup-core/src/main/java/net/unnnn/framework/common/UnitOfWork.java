@@ -2,6 +2,8 @@ package net.unnnn.framework.common;
 
 /**
  * 工作单元。
+ *
+ * @author ZengZhi
  */
 public interface UnitOfWork {
     /**

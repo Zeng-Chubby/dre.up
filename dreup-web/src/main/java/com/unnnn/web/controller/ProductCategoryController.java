@@ -1,7 +1,7 @@
-package com.unnnn.webapi.products;
+package com.unnnn.web.controller;
 
 import com.alibaba.dubbo.config.annotation.Reference;
-import com.unnnn.webapi.ApiController;
+import com.unnnn.web.AbstractApiController;
 import net.unnnn.instructions.ResponseInstruction;
 import net.unnnn.instructions.RequestInstruction;
 import net.unnnn.instructions.product.ProductCategoryObject;
@@ -14,13 +14,13 @@ import java.util.List;
 
 @RestController
 @RequestMapping(value = "/wechat/Goods")
-public class ProductCategoryController extends ApiController {
+public class ProductCategoryController extends AbstractApiController {
 
     @Reference(check = false)
     public ProductCategoryService productCategoryService;
 
     @RequestMapping(method = RequestMethod.GET)
-    public void Get() throws Exception {
+    public void get() throws Exception {
         throw new Exception("测试统一异常捕获。");
     }
 

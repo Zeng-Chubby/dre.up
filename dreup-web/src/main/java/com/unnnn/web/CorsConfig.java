@@ -1,4 +1,4 @@
-package com.unnnn.webapi;
+package com.unnnn.web;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;

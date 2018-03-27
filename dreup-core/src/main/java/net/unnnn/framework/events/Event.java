@@ -3,6 +3,11 @@ package net.unnnn.framework.events;
 import java.util.Date;
 import java.util.UUID;
 
+/**
+ * 表示事件参数。
+ *
+ * @author ZengZhi
+ */
 public interface Event {
     /**
      * 获取事件的唯一标识符。

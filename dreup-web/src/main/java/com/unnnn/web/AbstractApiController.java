@@ -1,7 +1,9 @@
-package com.unnnn.webapi;
+package com.unnnn.web;
 
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.UUID;
 
 /**
  * 控制器基类
@@ -9,5 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author 曾智
  */
 @RestController
-public abstract class ApiController {
+@EnableAutoConfiguration
+public abstract class AbstractApiController {
+
 }

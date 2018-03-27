@@ -3,6 +3,9 @@ package net.unnnn.framework.events;
 import java.util.Date;
 import java.util.UUID;
 
+/**
+ * @author ZengZhi
+ */
 public class EventArgs implements Event {
     @Override
     public UUID getId() {

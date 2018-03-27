@@ -2,6 +2,8 @@ package com.unnnn.queue;
 
 /**
  * RabbitMQ 队列消息 Bean, 用于发送和接受RabbitMq消息。
+ *
+ * @author ZengZhi
  */
 public class RabbitQueueMessage extends QueueMessage {
     /**
@@ -13,6 +15,9 @@ public class RabbitQueueMessage extends QueueMessage {
      */
     private RabbitExchangeType exchange;
 
+    /**
+     * 路由名称。
+     */
     private String exchangeName;
 
     public String getRoutingKey() {
@@ -29,5 +34,13 @@ public class RabbitQueueMessage extends QueueMessage {
 
     public void setExchange(RabbitExchangeType exchange) {
         this.exchange = exchange;
+    }
+
+    public String getExchangeName() {
+        return exchangeName;
+    }
+
+    public void setExchangeName(String exchangeName) {
+        this.exchangeName = exchangeName;
     }
 }

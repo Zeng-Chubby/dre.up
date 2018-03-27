@@ -9,6 +9,8 @@ import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 /**
  * Rabbit 消息队列发送。
+ *
+ * @author ZengZhi
  */
 @Component
 public class RabbitMessageQueueSender implements MessageQueueSender {
@@ -27,11 +29,13 @@ public class RabbitMessageQueueSender implements MessageQueueSender {
 
     @Override
     public void send(QueueMessage message) {
-        if (message == null)
+        if (message == null) {
             throw new IllegalArgumentException("message 不能为空");
+        }
 
-        if (!(message instanceof RabbitQueueMessage))
+        if (!(message instanceof RabbitQueueMessage)) {
             throw new IllegalArgumentException("message 必须要是 RabbitQueueMessage 实例。");
+        }
 
         // 转换成 Rabbit 队列消息。
         RabbitQueueMessage rabbitMessageMq = (RabbitQueueMessage) message;
@@ -107,7 +111,6 @@ public class RabbitMessageQueueSender implements MessageQueueSender {
                 /*amqpAdmin.declareExchange(fanoutExchange1);
                 Binding b2 = BindingBuilder.bind(fanoutExchange1).to(fanoutExchange);
                 amqpAdmin.declareBinding(b2);*/
-
 
 
                 this.template.convertAndSend("fanoutExchange_test", rabbitMessageMq.getRoutingKey(), rabbitMessageMq.getMessage());

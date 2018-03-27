@@ -11,12 +11,12 @@
         <!--<maven.compiler.source>9</maven.compiler.source>-->
         <!--<maven.compiler.target>9</maven.compiler.target>-->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <v.spring>4.3.10.RELEASE</v.spring>
+        <v.spring>5.0.2.RELEASE</v.spring>
     </properties>
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.5.4.RELEASE</version>
+        <version>1.5.9.RELEASE</version>
     </parent>
     <modules>
         <module>dreup-web</module>

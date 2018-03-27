@@ -6,6 +6,7 @@ package com.unnnn.queue;
 public interface MessageQueueSender {
     /**
      * 接收消息。
+     *
      * @param message 队列消息。
      */
     void send(QueueMessage message);
